@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { MovieList } from '../components/MovieList';
-import { MovieContainer } from '../styles/MovieContainer';
 import { MoviesService } from '../api/moviesService';
 
 export function Home() {
@@ -15,8 +14,6 @@ export function Home() {
     fetchMovies();
   }, []);
   return (
-    <MovieContainer>
       <MovieList movies={movies} />
-    </MovieContainer>
   );
 }
