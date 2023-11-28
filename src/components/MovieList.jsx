@@ -1,13 +1,11 @@
-import { MovieContainer } from '../styles/MovieContainer';
-import { MovieItem } from './MovieItem';
+import { MovieItem } from "./MovieItem";
 
 export function MovieList({ movies }) {
-  
   return (
     <section>
       <ul>
-        {movies.map((m) => {
-          return <MovieItem title={m.title} key={m.id} />;
+        {movies.map((movie) => {
+          return <MovieItem movie={movie} key={movie.id}></MovieItem>;
         })}
       </ul>
     </section>

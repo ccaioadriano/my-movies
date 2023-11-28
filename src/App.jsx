@@ -1,9 +1,7 @@
-import { useEffect, useState } from 'react';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import './App.css';
 import { Header } from './components/Header';
-import { MovieList } from './components/MovieList';
-import { MoviesService } from './api/moviesService';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { About } from './views/About';
 import { Home } from './views/Home';
 function App() {
   return (
@@ -11,6 +9,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/sobre/:id" element={<About />} />
       </Routes>
     </Router>
   );
