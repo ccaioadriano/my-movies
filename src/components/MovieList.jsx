@@ -4,6 +4,7 @@ import styled from 'styled-components';
 const MovieContainer = styled.section`
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   padding: 15px;
   backgraound: #cecece;
 `;
